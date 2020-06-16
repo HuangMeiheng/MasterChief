@@ -28,7 +28,6 @@ namespace MasterChief.DotNet4.Utilities.Common
         /// <param name="processPath">程序exe全路径</param>
         public static void Run(string processPath)
         {
-            //Cherry-pick 1
             ValidateOperator.Begin()
                 .NotNullOrEmpty(processPath, "需要运行的程序路径")
                 .CheckFileExists(processPath);
